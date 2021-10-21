@@ -16,18 +16,16 @@ var renderedHTML = ``;
 menu = () => {
   createManager = async () => {
     const { name, id, email, officeNumber } = await inquirer.prompt(managerQuestions);
-    console.log({ name, id, email, officeNumber });
+    // console.log({ name, id, email, officeNumber });
     const manager = new Manager(name, id, email, officeNumber);
-    console.log(manager);
+    // console.log(manager);
     renderedHTML = cardHTML.managerCardHTML(manager);
-    console.log(renderedHTML);
-    // fs.writeFile('../dist/index.html', renderedHTML, (err) => 
-    //   err ? console.log(err) : console.log('Success!'));
+    // console.log(renderedHTML);
     pickNext();
   };
   pickNext = async () => {
     const picker = await inquirer.prompt(pickerQuestion);
-    console.log(picker.pick);
+    // console.log(picker.pick);
     switch (picker.pick) {
       case "Engineer":
         createEngineer();
@@ -42,38 +40,25 @@ menu = () => {
   };
   createEngineer = async () => {
     const { name, id, email, github } = await inquirer.prompt(engineerQuestions);
-    console.log({ name, id, email, github });
+    // console.log({ name, id, email, github });
     const engineer = new Engineer(name, id, email, github);
-    console.log(engineer);
+    // console.log(engineer);
     renderedHTML += cardHTML.engineerCardHTML(engineer);
-    console.log(renderedHTML);
-    // fs.readFile('../dist/index.html', 'utf8', (err, data) =>
-    //   err ? console.error(err) : card = card + data);
-    // fs.writeFile('../dist/index.html', card, (err) => 
-    //   err ? console.log(err) : console.log('Success!'));
+    // console.log(renderedHTML);
     pickNext();
   };
     createIntern = async () => {
       const { name, id, email, school } = await inquirer.prompt(internQuestions);
-      console.log({ name, id, email, school });
+      // console.log({ name, id, email, school });
       const intern = new Intern(name, id, email, school);
-      console.log(intern);
+      // console.log(intern);
       renderedHTML += cardHTML.internCardHTML(intern);
-      console.log(renderedHTML);
-      // fs.readFile('../dist/index.html', 'utf8', (err, data) =>
-      //   err ? console.error(err) : card = card + data);
-      // fs.writeFile('../dist/index.html', card, (err) => 
-      //   err ? console.log(err) : console.log('Success!'));
+      // console.log(renderedHTML);
       pickNext();
     };
     renderHTML = () => {
-      // var card = cardHTML.endHTML;
-      // var prevHTML = ``;
-      // fs.readFile('../dist/index.html', 'utf8', (err, data) =>
-      //   err ? console.error(err) : prevHTML = `${data}`);
-      // console.log(renderedHTML);
       renderedHTML += cardHTML.endHTML;
-      console.log(renderedHTML);
+      // console.log(renderedHTML);
       fs.writeFile('../dist/generatedTeam.html', renderedHTML, (err) => 
         err ? console.log(err) : console.log('Success!'));
     };
