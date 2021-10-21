@@ -60,4 +60,8 @@ menuIntern = () => {
   menuRolePicker();
 }
 
+renderHTML = () => {
+  fs.writeF
+}
+
 menu();
