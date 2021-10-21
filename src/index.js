@@ -74,7 +74,7 @@ menu = () => {
       // console.log(renderedHTML);
       renderedHTML += cardHTML.endHTML;
       console.log(renderedHTML);
-      fs.writeFile('../dist/index.html', renderedHTML, (err) => 
+      fs.writeFile('../dist/generatedTeam.html', renderedHTML, (err) => 
         err ? console.log(err) : console.log('Success!'));
     };
   createManager();
