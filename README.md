@@ -7,8 +7,15 @@ The application uses [Jest](https://www.npmjs.com/package/jest) for running the 
 node index.js
 ```
 
+# Tests:
+
+```bash
+npm run test
+```
+
 # Sample Generated Team HTML:
-https://github.com/cjohnson74/Team-Profile-Generator
+
+https://cjohnson74.github.io/Team-Profile-Generator/
 
 # Live Demestration Video of Application:
 
