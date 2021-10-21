@@ -78,7 +78,7 @@ internQuestions : [
 pickerQuestion : [
     {
         type: "list",
-        name: "role",
+        name: "pick",
         message: "Whould you like to add an Engineer or Intern?",
         choices: ['Engineer', 'Intern', 'Finish building my team']
     }]
