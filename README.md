@@ -6,3 +6,10 @@ The application uses [Jest](https://www.npmjs.com/package/jest) for running the 
 ```bash
 node index.js
 ```
+
+# Sample Generated Team HTML:
+https://github.com/cjohnson74/Team-Profile-Generator
+
+# Live Demestration Video of Application:
+
+https://drive.google.com/file/d/17OG7WQRpkqwWAAePtxQNbLR-eLW8Chjd/view
