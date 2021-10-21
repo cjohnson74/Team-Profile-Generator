@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    align-content: center;
+}
+
+header {
+    background-size: cover;
+    background-color: rgb(252, 39, 74);
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 3rem;
+    font-size: 2rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 40rem;
+    width: 60%;
+    justify-content: center;
+    margin: 5rem 20% 5rem 20%;
+}
+
+.card {
+    height: fit-content;
+    width: auto;
+    background-color: white;
+    box-shadow: .3rem .3rem .3rem gray;
+    border-radius: .5rem;
+    margin: 1rem;
+}
+
+.header {
+    background-color: rgb(61, 61, 255);
+    border-radius: .5rem .5rem 0rem 0rem;
+}
+
+.body {
+    background-color: lightgray;
+    padding: 2rem 1rem 2rem 1rem;
+    width: auto;
+    height: auto;
+    border-radius: 0rem 0rem .5rem .5rem;
+}
+
+p {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: .5rem;
+    width: 15rem;
+    border-radius: .2rem;
+    margin: .3rem;
+}
+
+.name {
+    margin: 0;
+    padding: 1rem 1rem .5rem 1rem;
+    color: white;
+}
+
+.role {
+    margin: 0;
+    padding: .5rem 1rem 1rem 1rem;
+    color: white;
+}
