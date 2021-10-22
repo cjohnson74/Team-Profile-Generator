@@ -12,6 +12,9 @@ node index.js
 ```bash
 npm run test
 ```
+# Screenshot:
+
+<img width="1773" alt="Screen Shot 2021-10-21 at 8 31 54 PM" src="https://user-images.githubusercontent.com/52815609/138374890-d9417d02-a443-42b9-ae97-3086ecf9f26a.png">
 
 # Sample Generated Team HTML:
 
